@@ -169,3 +169,24 @@ class Main {
 Everything technically extends the `Object` class.
 
 Everything has `.toString()`, etc, because `Object` has it.
+
+### `instanceof` keyword
+
+Checks if an object superclass is an instance of a subclass.
+
+```java
+class Main{
+    public static void main(String[] args) {
+        Object c = new Chair();
+        if(c instanceof Chair){
+            System.out.println("The Object is a Chair!");
+        }
+    }
+}
+```
+
+### Constructors are not inherited
+
+When you use `Chair c = new Chair();`, the `Chair` constructor is always called, and not superclass `Furniture`.
+
+To call `Furniture` constructor, `super()` must be used in `Chair` constrctor.

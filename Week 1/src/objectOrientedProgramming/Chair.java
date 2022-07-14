@@ -53,4 +53,16 @@ public class Chair
         numberOfLegs = 2;
         isOccupied = false;
     }
+    @Override
+    public boolean equals(Object other){
+        if(other instanceof Chair){
+            Chair c = (Chair) other;
+            if(c.cost == cost && c.isOccupied == isOccupied && c.numberOfLegs == numberOfLegs){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }
