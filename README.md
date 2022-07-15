@@ -8,7 +8,7 @@ To follow the guide, refer to our camp documentation:
 
 [Week 2 Guide - Object Oriented Programming](https://docs.google.com/document/d/1UiHndmY1Ho1f_Z78rt0P2zo85l7sgqPf5LsCkHyS0VQ/edit?usp=sharing)
 
-###Contributors
+### Contributors
 
 Victor Cheng
 
