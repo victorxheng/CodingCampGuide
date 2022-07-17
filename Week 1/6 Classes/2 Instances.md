@@ -17,7 +17,7 @@ class Main{
 
 ### Fields
 
-Variables inside an object that make up its state.
+Variables inside an object that make up its state. Also called attributes
 
 ```java
 class Chair{
@@ -25,6 +25,7 @@ class Chair{
     boolean occupied;//this is another field
 }
 ```
+
 ### Instance method
 
 Methods inside an object that operates on the object; object behaviors.
@@ -67,6 +68,7 @@ Gives you the instance of the current object.
 ```java
 class Chair{
     private boolean occupied;//field
+    
     public void setOccupied(boolean occupied){
         this.occupied = occupied;
     }

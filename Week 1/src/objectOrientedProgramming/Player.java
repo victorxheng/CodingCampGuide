@@ -14,8 +14,10 @@ public class Player {
     private void generateCards(){
         for(int i = 0; i < cardList.length; i++){
             cardList[i] = generateCard();
+            //System.out.println("Health = " + cardList[i].getHealth() + ", Damage = "+ cardList[i].getDamage());
         }
     }
+
     private Card generateCard(){
         Random r = new Random();
         return new Card(r.nextInt(20), r.nextInt(40));

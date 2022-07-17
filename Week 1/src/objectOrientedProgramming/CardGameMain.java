@@ -67,6 +67,7 @@ public class CardGameMain {
             System.out.println("Choose a card number: ");
             currentPlayer.printCards();
 
+
             int selectedIndex;
             while (true) {
                 System.out.println("Type the card number:");

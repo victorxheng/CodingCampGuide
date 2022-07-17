@@ -27,7 +27,7 @@ Set of actions an object can perform, often reporting or modifying its internal 
 
 ```java
 class Chair {
-    int numberOfLegs;//this is a state
+    public int numberOfLegs;//this is a state
     
     //these are behaviors
     public void breakChair(){
@@ -35,6 +35,9 @@ class Chair {
     }
     public void growChair(){
         numberOfLegs = 4;
+    }
+    public int getNumberOfLegs(){
+        return numberOfLegs;
     }
 }
 ```
@@ -57,9 +60,10 @@ class Main{
         remysChair.growChair();
         aaronsChair.growChair();
         remysChair.breakChair();
-        System.out.println("Aaron's chair has " + aaronsChair.legs + "legs");
-        System.out.println("Remy's chair has " + remysChair.legs + "legs");
+        System.out.println("Aaron's chair has " + aaronsChair.numberOfLegs + "legs");
+        System.out.println("Remy's chair has " + remysChair.numberOfLegs + "legs");
     }
+    
 }
 ```
 

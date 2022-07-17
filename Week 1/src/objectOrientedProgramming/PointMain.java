@@ -13,6 +13,7 @@ public class PointMain {
 
         ArrayList<Point> listOfPoints = new ArrayList<>();
         listOfPoints.add(p1);
+        listOfPoints.add(new Point(5,3));
         System.out.println("We have " + listOfPoints.size() + " points");
 
     }
