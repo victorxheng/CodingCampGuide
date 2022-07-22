@@ -27,4 +27,16 @@ public class MyQueue {
         }
         return temp;
     }
+
+    public boolean isEmpty(){
+        if(firstNode == null){
+            return true;
+        }
+        return false;
+    }
+    public void clear(){
+        firstNode = null;
+        lastNode = null;
+    }
+
 }
