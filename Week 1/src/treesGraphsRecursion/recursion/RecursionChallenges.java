@@ -1,4 +1,4 @@
-package treesGraphsRecursion.trees;
+package treesGraphsRecursion.recursion;
 
 public class RecursionChallenges {
     public static void main(String[] args) {

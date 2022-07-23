@@ -48,4 +48,3 @@ no parent.
 
 - Extra data required to store location of child nodes
 - Recursion is required to visit all nodes
-

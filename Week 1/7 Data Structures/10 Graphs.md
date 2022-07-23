@@ -23,3 +23,17 @@ Represent a connection between elements.
 Graphs are usually represented using an adjacency matrix. 
 
 ![img_8.png](img_8.png)
+
+### Directed Graph
+
+All edges of a directed graph have a direction indicating what is the
+start vertex and what is the end vertex.
+
+![img_11.png](img_11.png)
+
+### Undirected Graph
+
+All edges of an undirected graph have no direction. It can go in both
+ways between the two vertices.
+
+![img_12.png](img_12.png)

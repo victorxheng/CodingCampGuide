@@ -13,4 +13,8 @@ public class MyTreeMain {
         root.right.right = new MyTreeNode(2);
         root.right.left.right = new MyTreeNode(5);
     }
+    public static int sumTree(MyTreeNode node){
+        if(node == null) return 0;
+        return node.data + sumTree(node.left) + sumTree(node.right);
+    }
 }
