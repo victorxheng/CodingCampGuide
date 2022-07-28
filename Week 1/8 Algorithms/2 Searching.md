@@ -48,6 +48,8 @@ Doing this gets rid of half the options each round.
 
 We then repeat this process with the new bounds until we get our desired number.
 
+![img_4.png](img_4.png)
+
 ### Example
 
 Search a sorted array of integers for a number, num:
