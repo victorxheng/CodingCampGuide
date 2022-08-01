@@ -1,0 +1,15 @@
+package competitiveProgramming;
+
+import java.util.Scanner;
+
+public class WeirdAlgorithm
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        //do stuff with it
+
+        System.out.println("Answer");
+    }
+}
