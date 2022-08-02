@@ -10,12 +10,16 @@ To follow the guide, refer to our camp documentation:
 
 [Week 3 Guide - Data Structures](https://docs.google.com/document/d/1PAoVOrwSTKuBxbxt7ZchinVRpcUV0MzsfnN0mHxyA9A/edit?usp=sharing)
 
-[Week 4 Guide - Algorithms (Work in progress)](https://docs.google.com/document/d/1PkR9_3rUh_EpmoPprjsSOjiOOUWz_nx3cYnVB9_-lfc/edit?usp=sharing)
+[Week 4 Guide - Algorithms](https://docs.google.com/document/d/1PkR9_3rUh_EpmoPprjsSOjiOOUWz_nx3cYnVB9_-lfc/edit?usp=sharing)
+
+[Week 5 Guide - Competitive Programming](https://docs.google.com/document/d/1FeJk7g2Ejj77Lcm3NVcFFnFCmURNWa-uvdOeQdvv6Fc/edit?usp=sharing)
 
 ### Contributors
 
 Victor Cheng
 
 Eric Ye
+
+Ryan Huang
 
 With some examples provided by students, credited in the code
