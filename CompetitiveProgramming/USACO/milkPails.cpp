@@ -21,5 +21,4 @@ int main() {
     ofstream fout("pails.out");
     fout << max;
     return 0;
-
 }
