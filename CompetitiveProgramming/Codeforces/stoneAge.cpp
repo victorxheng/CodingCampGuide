@@ -35,12 +35,12 @@ int main()
             if (m[ind].second == timestamp)
             {
                 // set value is updated correctly. it's been reset then changed already
-                counter += (val - m[ind].first); // increase counter by differece between new value - old value
+                counter += (val - m[ind].first);
             }
             else
             {
                 // set value has not been updated, so it's outdated after reset
-                counter += (val - setVal); // increase counter by new value - value everything is set to
+                counter += (val - setVal); 
             }
             // set index to value
             m[ind] = {val, timestamp};
