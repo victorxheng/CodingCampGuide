@@ -14,6 +14,8 @@ To follow the guide, refer to our camp documentation:
 
 [Week 5 Guide - Competitive Programming](https://docs.google.com/document/d/1FeJk7g2Ejj77Lcm3NVcFFnFCmURNWa-uvdOeQdvv6Fc/edit?usp=sharing)
 
+[Week 6 Guide - C++ Data Structures](https://docs.google.com/document/d/1gKLju4xdGVPnbq0tlPvKZSnje_8ilS6j9nekAa1n6kQ/edit?usp=sharing)
+
 ### Contributors
 
 Victor Cheng
