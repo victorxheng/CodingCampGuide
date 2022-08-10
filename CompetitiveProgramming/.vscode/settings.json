@@ -4,6 +4,8 @@
         "iostream": "cpp",
         "vector": "cpp",
         "map": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp"
     }
 }
