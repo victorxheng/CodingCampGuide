@@ -31,6 +31,8 @@ class Chair {
         // friend function to print the chair data
         friend ostream& operator<<(ostream& out, const Chair& c);
 
+    
+    
 };
 
 // friend function to print the chair data
