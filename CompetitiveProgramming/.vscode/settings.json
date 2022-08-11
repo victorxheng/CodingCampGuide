@@ -6,6 +6,8 @@
         "map": "cpp",
         "xhash": "cpp",
         "algorithm": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "xlocale": "cpp",
+        "xstring": "cpp"
     }
 }
