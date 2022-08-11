@@ -1,28 +1,21 @@
-#include <map>
-#include <unordered_map>
-#include <iostream>
+//CREDIT: AARON
+#include <bits/stdc++.h>
 
 using namespace std;
-
-// maps are containers that store
-// key value pairs. The keys are unique
-// unless it is a multimap.
-
-int main() {
-    map<int, int> mp;
-    
-    // set key 5 to 6
-    mp[5] = 6;
-
-    // access the value of key 5
-    int six = mp[5];
-
-    // if key doesn't exist, map will give you the default
-    // value of the type (0 for int)
-    // set 1 to 0 and return 0
-    int zero = mp[1];
-
-    // remove five from map
-    mp.erase(5);
-
+int main(){
+    map<int, int> s;
+    int n, x, num, diff;
+    cin >> n >> x;
+    for(int i = 0; i < n; i++){
+        cin >> num;
+        diff = x - num;
+        if(s.count(diff)){
+            cout << i + 1 << " " << s[diff];
+            return 0;
+        }
+        else{
+            s[num] = i + 1;
+        } 
+    }
+    cout << "IMPOSSIBLE";
 }
