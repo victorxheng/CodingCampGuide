@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+//Credit: JAN
 using namespace std;
 
 int main(){
