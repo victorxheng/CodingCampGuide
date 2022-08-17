@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.positioin.y < -10){
+        if(transform.position.y < -10){
             transform.position = spawnPoint;
         }
 
