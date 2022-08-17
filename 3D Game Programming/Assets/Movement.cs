@@ -10,10 +10,13 @@ public class Movement : MonoBehaviour
         //looks for the rigidbody component attached to the gameobject this script is attached to
         rb = gameObject.GetComponent<Rigidbody>();
     }
-
+    Vector3 spawnPoint = new Vector3(0, 1, 0);
     // Update is called once per frame
     void Update()
     {
+        if(transform.positioin.y < -10){
+            transform.position = spawnPoint;
+        }
 
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f);
        
@@ -79,7 +82,7 @@ public class Movement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Checkpoint"))
         {
-            //set new spawn point
+            spawnPoint = other.transform.position + new Vector3(0, 1, 0);
         }
     }
 }
