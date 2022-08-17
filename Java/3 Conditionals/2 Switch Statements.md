@@ -1,6 +1,6 @@
 # Switch Statements
 
-What if we want to check large amounts of cases quickly? Use if statements.
+What if we want to check large amounts of cases quickly? Use switch statements.
 
 ```java
 import java.util.Scanner;
@@ -89,6 +89,7 @@ public class Main {
                break;
            case 2:
                System.out.println("This month has 28 or 29 days");
+               break;
        }
    }
 }
