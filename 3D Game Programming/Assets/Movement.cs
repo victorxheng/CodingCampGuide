@@ -118,7 +118,7 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
         
         //apply the force to the rigidbody
-        rb.AddForce(moveDirection.normalized * moveSpeed * sprintMultiplier * airMultiplier, ForceMode.Force);
+        rb.AddForce(moveDirection.normalized * moveSpeed * sprintMultiplier * airMultiplier * 10f, ForceMode.Force);
     }
     void LimitSpeed()
     {
