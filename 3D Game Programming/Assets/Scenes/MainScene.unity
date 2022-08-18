@@ -1229,14 +1229,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe08b72d2dcc67459fd4cea31871a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 49181384}
   playerHeight: 1
   jumpForce: 20
   groundDrag: 5
   airDrag: 1
   airReduction: 1
   orientation: {fileID: 46036965}
-  moveSpeed: 1000
+  levelText: {fileID: 49181384}
+  moveSpeed: 100
   maxSpeed: 25
 --- !u!135 &902116933
 SphereCollider:

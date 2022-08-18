@@ -128,7 +128,6 @@ public class Movement : MonoBehaviour
             Vector3 limitedSpeed = speed.normalized * maxSpeed * sprintMultiplier;
             rb.velocity = new Vector3(limitedSpeed.x, rb.velocity.y, limitedSpeed.z);
         }
-        print(new Vector3(rb.velocity.x,0,rb.velocity.z).magnitude);
     }
 
     private void OnTriggerEnter(Collider other)
