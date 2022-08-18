@@ -33,10 +33,9 @@ public class CameraController : MonoBehaviour
     private float _actualZoom = 10.0f;
     private float _actualPitch = 0.0f;
     private float _actualYaw = 0.0f;
-    private bool _useOrbit = false;
 
    
-    private Vector3 offset = new Vector3(0, -0.5f, 0);
+    private Vector3 offset = new Vector3(0, 1f, 0);
 
 
     private void Update()
@@ -53,6 +52,8 @@ public class CameraController : MonoBehaviour
             yAxis = Input.GetAxis("Mouse Y");//gets Y of mouse
         }
 
+
+        //this code is for locking the mouse when zoomed in for first person
         if (_targetZoom < 1)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -73,6 +74,8 @@ public class CameraController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
+
 
         if (mouseDown)
         {
