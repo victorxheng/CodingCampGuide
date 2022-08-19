@@ -19,6 +19,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] public float ZoomLowerLimit;
     [SerializeField] public float ZoomUpperLimit;
 
+
+
     //how fast orbiting is. Just set to a large number
     [SerializeField, Range(0.005f, 2.0f)] public float OrbitalAcceleration;
     [SerializeField, Range(0.005f, 2.0f)] public float ZoomAcceleration;
@@ -75,7 +77,12 @@ public class CameraController : MonoBehaviour
             Cursor.visible = true;
         }
 
-
+        if (MenuManager.isGamePaused)
+        {
+            mouseDown = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
 
         if (mouseDown)
         {

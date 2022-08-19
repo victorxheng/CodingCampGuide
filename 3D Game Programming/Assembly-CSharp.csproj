@@ -56,10 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\LastPosition.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\Example\Scripts\SpawnEnemy.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\Tidy.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraTopDown.cs" />
     <Compile Include="Assets\Follow.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Animation\CharacterAnimation.cs" />
+    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\Checkpoint.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\ClickToMove.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Enemy\EnemyAI.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraTopDownPan.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\Example\Scripts\GameController.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\DirectionalMove.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Player\FirstPersonMove.cs" />
     <Compile Include="Assets\Movement.cs" />
     <Compile Include="Assets\CameraController.cs" />
+    <Compile Include="Assets\StarterKit-MoveCamAI\StarterKit\Scripts\Camera\CameraFirstPerson.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -76,6 +89,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\StarterKit-MoveCamAI\StarterKit\Documentation\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

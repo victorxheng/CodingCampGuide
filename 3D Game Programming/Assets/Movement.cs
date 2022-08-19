@@ -46,6 +46,15 @@ public class Movement : MonoBehaviour
         transform.position = spawnPoint;
     }
 
+    public void ResetGame()
+    {
+        PlayerPrefs.SetFloat("spawnX", 0);
+        PlayerPrefs.SetFloat("spawnY", 1);
+        PlayerPrefs.SetFloat("spawnZ", 0);
+        PlayerPrefs.SetInt("level", 0);
+        Start();
+    }
+
     Vector3 spawnPoint;
 
     // Update is called once per frame
