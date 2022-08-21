@@ -13,6 +13,10 @@ Packages/*
 
 Assets/Packages/*
 Assets/Packages/*.meta
+Assets/AllSkyFree/*
+Assets/AllSkyFree/*.meta
+Assets/EffectExamples/*
+Assets/EffectExamples/*.meta
 
 [Aa]ssets/AssetStoreTools*
 

@@ -49,11 +49,15 @@ public class Movement : MonoBehaviour
     void Update()
     {
         grounded = Physics.Raycast(transform.position + new Vector3(0, 0.15f, 0), Vector3.down, 0.2f);
-        if(alive) rb.velocity = new Vector3(0,Input.GetKey(KeyCode.Space) || !grounded ? rb.velocity.y : 0, CalculateSpeed(score));
+        if(alive) rb.velocity = 
+                new Vector3(0,Input.GetKey(KeyCode.Space) || !grounded ? rb.velocity.y : 0, CalculateSpeed(score));
 
         ComputerInput();
 
-        transform.position = new Vector3(Mathf.Lerp(transform.position.x, targetX, 0.04f), Mathf.Clamp( transform.position.y, -0.1f, 100), transform.position.z);
+        transform.position = new Vector3(
+            Mathf.Lerp(transform.position.x, targetX, 0.04f), 
+            Mathf.Clamp( transform.position.y, -0.1f, 100), 
+            transform.position.z);
 
         scoreText.text = "Score: " + score;
         
