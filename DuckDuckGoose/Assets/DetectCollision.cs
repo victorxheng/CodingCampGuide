@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
 {
-    public GameObject player;
+    public Transform player;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -12,6 +12,6 @@ public class DetectCollision : MonoBehaviour
     }
     private void Update()
     {
-        transform.localPosition = Vector3.zero;
+        transform.position = player.transform.position;
     }
 }
