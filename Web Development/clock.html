@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head></head>
+<body>
+    <!--the span is the element that our javascript will edit-->
+   <h1>The time is <span id="time"></span></h1>
+   <img alt="image" id="time_image" />
+   <!--Javascript is written inside the script element-->
+   <script>
+        // element to edit the time
+        function getTime() {
+            document.getElementById("time_image").setAttribute("src", "")
+            let d = new Date();
+            document.getElementById("time").innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(getTime, 1000);
+   </script>
+</body>
+</html>

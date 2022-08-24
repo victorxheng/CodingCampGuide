@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+<head></head>
+<body>
+    <h1>Celsius to fahrenheit Converter</h1>
+    <p>Enter number of miles here:</p>
+    <input type="number" onkeyup="updateText(this.value)"/>
+    <p id="result"></p>
+    <script>
+        function updateText(miles) {
+            let result = miles * 1.60934;
+            document.getElementById("result").innerHTML = `This is ${result} miles`;
+        }
+    </script>
+</body>
+</html>

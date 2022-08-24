@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+<head></head>
+<body>
+    <button onclick="clickAction()">Click Me</button>
+    <div id="hi_container"></div>
+    <script>
+        function clickAction() {
+            let child = document.createElement("p");
+            child.innerHTML = "Hello";
+            document.getElementById("hi_container").appendChild(child);
+        }
+    </script>
+</body>
+</html>

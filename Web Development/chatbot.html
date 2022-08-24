@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #chatbox {
+            width: 50%;
+            height: 50vh;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(224, 224, 224);
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .input_section {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+        .gradient_button {
+            border-radius: 999px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            color: white;
+        }
+
+        .gradient_button:hover {
+            background: linear-gradient(90deg, #65bcd4 0%, #3743b0 100%);
+        }
+        .question {
+            text-align: right;
+            margin-left: 30px;
+        }
+        .answer {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="chatbox"></div>
+    <div class="input_section">
+        <input type="text" id="input">
+        <button class="gradient_button" onclick="addConversation()">Submit</button>
+    </div>
+    <script>
+        document.getElementById("input")
+        .addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                addConversation();
+            }
+        });
+        function addConversation() {
+            let input = document.getElementById("input");
+            let question = input.value;
+            input.value = "";
+            let response = Math.random() < 0.5 ? "Yes" : "No";
+            let questionNode = document.createElement("p");
+            questionNode.innerHTML = question;            
+            questionNode.classList.add("question");
+            let answerNode = document.createElement("p");
+            answerNode.innerHTML = response;
+            answerNode.classList.add("answer");
+            let chatbox = document.getElementById("chatbox");
+            chatbox.appendChild(questionNode);
+            chatbox.appendChild(answerNode);
+            answerNode.scrollIntoView();
+        }
+    </script>
+</body>
+</html>
