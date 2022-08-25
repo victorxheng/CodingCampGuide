@@ -1,0 +1,21 @@
+.countdown-timer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2cm;
+}
+
+.countdown-timer-container input{
+    width: 10%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown-timer-container button{
+    width: 10%;
+    text-align: center;
+    font-size: 30px;
+}
