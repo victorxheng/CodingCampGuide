@@ -1,0 +1,74 @@
+:root{
+  --primary: navy;
+  --dark: black;
+  --light: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+body{
+  background-color: var(--light);
+}
+.App{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+  background: linear-gradient(90deg, lightblue 0%, teal 100%);
+}
+.calcu{
+  width: 100%;
+  max-width: 400px;
+  background-color: aliceblue;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px black;
+}
+.display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 24px;
+  font-weight: 300;
+}
+.display{
+  font-size: 24px;
+  color: grey;
+}
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover{
+ opacity: 0.5;
+}
+.op{
+  display: flex;
+  flex-wrap: wrap;
+}
+.op button{
+  flex: 1 1 20%;
+  max-width: 20%;
+  background-color: var(--primary);
+  font-weight: 700;
+}
+.num{
+  display: flex;
+  flex-wrap: wrap;
+}
+.num button{
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
