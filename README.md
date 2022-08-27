@@ -18,6 +18,8 @@ To follow the guide, refer to our camp documentation:
 
 [Week 7 Guide - 3D Game Programming](https://docs.google.com/document/d/1W_9fqO7D1LK8E2aD3XsGE_k2zwIvST-oq7v6obdaTyk/edit?usp=sharing)
 
+[Week 8 Guide - Web App Development](https://docs.google.com/document/d/1bWNMen3YJ29Ah_y_vADtrJltzuLPeoCmrG5KYCRp6Xc/edit?usp=sharing)
+
 ### Contributors
 
 Victor Cheng
