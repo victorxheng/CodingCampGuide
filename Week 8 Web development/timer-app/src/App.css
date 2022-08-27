@@ -1,0 +1,125 @@
+.OuterDiv {
+  padding-bottom: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 20px;
+  margin: 2em;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 20px;
+  width: 2em;
+  background-color: transparent;
+  height: 2em;
+  border: 1px solid rgb(187, 187, 187);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input:hover {
+  border: 1px solid white;
+}
+
+.input:focus {
+  border: 2px solid white;
+}
+
+/* for the buttons with gradient shadows */
+.gradient__btn {
+  font-size: 16px;
+  margin: 15px;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.75em 1.75em;
+  border-radius: 50px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  transition: background-position linear 0.2s;
+}
+/* This after element acts like the shadow */
+.gradient__btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 5%;
+  height: 110%;
+  width: 90%;
+  opacity: 0.8;
+  border-radius: 50px;
+
+  /* Declaring our shadow color inherit from the parent (button) */
+  background: inherit;
+
+  /* Blurring the element for shadow effect */
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+
+  /* Transition for the magic */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.gradient__btn:hover,
+.gradient__btn:focus::after {
+  background-position: 50%;
+}
+.gradient__btn:hover::after,
+.gradient__btn:focus::after {
+  /* Changing blur effect */
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+
+  /* And change the style properties */
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.gradient__btn:hover:active::after {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.start {
+  background: rgb(0,214,116);
+  background: linear-gradient(90deg, rgba(0,214,116,1) 0%, rgba(162,162,16,1) 100%);
+}
+
+.reset {
+  background: rgb(0, 214, 195);
+  background: linear-gradient(90deg, rgba(0, 214, 195, 1) 0%, rgba(16, 76, 162, 1) 100%);
+}
+
+.stop {
+  background: rgb(170,0,0);
+  background: linear-gradient(90deg, rgba(170,0,0,1) 0%, rgba(162,127,16,1) 100%);
+}
+.timer {
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+}
